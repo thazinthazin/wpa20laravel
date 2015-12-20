@@ -6,5 +6,6 @@ Laravel Group Project
 
 And Try And Use.
 
-// Remark
-   Social Login Method Is Must Be <http://localhost:8000/> ...
+// Remark //
+   // 1. mail with mailgun => php artisan queue:work
+   // 2. Social Login Method Is Must Be <http://localhost:8000/> ...
