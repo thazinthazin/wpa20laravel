@@ -2,7 +2,7 @@
     <h3 class="widget-title">Popular Products</h3>
 
     <ul class="media-list">
-    @foreach(App\Product::take(5)->orderBy( 'rating_cache', 'DESC' )->get() as $product)
+    @foreach(App\Product::where('availability' , '=' , 1)->take(5)->orderBy( 'rating_cache', 'DESC' )->get() as $product)
         <li class="media">
             <a class="pull-left" href="{{route('shop_product_show', $product->id)}}">
                 <img class="media-object" src="{{asset($product->image)}}">

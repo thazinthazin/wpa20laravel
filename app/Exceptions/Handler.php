@@ -51,11 +51,13 @@ class Handler extends ExceptionHandler
 
 
     public function render($request, Exception $e) {
-        if ($e instanceof \Symfony\Component\HttpKernel\Exception\NotFoundHttpException){
+        if ($e instanceof \Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException || $e instanceof \Symfony\Component\HttpKernel\Exception\NotFoundHttpException) {
             
             return redirect()->back();
         }
 
         return parent::render($request, $e);
     }
+
+
 }

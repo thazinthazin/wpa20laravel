@@ -42,7 +42,7 @@
                     <p>
                         If u don't have account.
                     </p>
-                    <a href="{{route('customer.create')}}" class="btn btn-success text-center">Create Account</a>                                     
+                    <a href="{{route('customer_create')}}" class="btn btn-success text-center">Create Account</a>                                     
                 </div>
             </form>
         </div>            

@@ -17,7 +17,7 @@
                                     <i class="rt-icon-user2"></i> <a href="{{route('customer_login')}}">Login</a>
                                 </p>
                                 <p>
-                                    <i class="rt-icon-locked"></i> <a href="{{route('customer.create')}}">Register</a>
+                                    <i class="rt-icon-locked"></i> <a href="{{route('customer_create')}}">Register</a>
                                 </p>
                                 @else
                                 <p>

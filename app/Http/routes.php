@@ -11,6 +11,10 @@
 |
 // */
 
+Route::get('test', function(){
+	return View::make('test');
+});
+
 
 
 
@@ -42,12 +46,12 @@ Route::group(['middleware' => ['redirectAdmin']], function(){
 	//CUSTOMER PANEL ROUTE
 	Route::get('/customer/login',	['as' => 'customer_login' , 'uses' => 'CustomerController@getLogin']);
 	Route::post('/customer/login',	['as' => 'customer_post_login', 'uses' => 'CustomerController@postLogin']);
-	Route::get('/customer/logout',	['as' => 'customer_logout', 'uses' => 'CustomerController@getLogout']);
 	Route::get('/customer/register',	['as' => 'customer_create', 'uses' => 'CustomerController@getCreate']);
 
 	Route::group(['middleware' => 'senuser'], function(){
 	Route::put('/customer/profile/{id}', ['as' => 'customer_profile_update', 'uses' => 'CustomerController@profileUpdate']);  
-	Route::resource('/customer', 'CustomerController');
+	Route::get('/customer/logout',	['as' => 'customer_logout', 'uses' => 'CustomerController@getLogout']);
+	resource('/customer', 'CustomerController' , ['except' => array('show', 'create', 'destroy')]);
 
 
 	Route::group(['prefix' => '/customer/my'], function(){
