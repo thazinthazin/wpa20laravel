@@ -20,10 +20,10 @@ class SentinelUserSeeder extends Seeder
         DB::table('persistences')->truncate();       
        
         $credentials = [
-        'email'    => 'user@gmail.com',
+        'email'    => 'thazin@gmail.com',
         'password' => '123456',
-        'first_name' => 'mr',
-        'last_name' => 'moe',
+        'first_name' => 'thazin',
+        'last_name' => 'htun',
         ];
 
         $user = Sentinel::registerAndActivate($credentials);

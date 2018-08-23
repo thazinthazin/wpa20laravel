@@ -117,7 +117,6 @@ class AdminController extends Controller
 
     public function getLogout()
     {
-
         //Logout 
         Sentinel::logout();
 
