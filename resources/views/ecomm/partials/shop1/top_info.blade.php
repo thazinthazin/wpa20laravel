@@ -9,7 +9,7 @@
                 Follow Us:
                 <a class="socialico-facebook" href="https://www.facebook.com/" title="Facebook" data-toggle="tooltip">#</a>
                 <a class="socialico-twitter" href="https://www.twitter.com/" title="Twitter" data-toggle="tooltip">#</a>
-                <a class="socialico-google" href="https://github.com/moenatmin/" title="Github" data-toggle="tooltip">#</a>
+                <a class="socialico-google" href="https://github.com/thazinthazin/" title="Github" data-toggle="tooltip">#</a>
 
 
 

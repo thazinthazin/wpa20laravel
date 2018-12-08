@@ -31,7 +31,7 @@
                         <div class="alert alert-danger" role="alert" align="center">                            
 
                             <label for="">Login Name:</label>
-                            <span>user@gmail.com</span>
+                            <span>user2@gmail.com</span>
                             <br>
                             <label for="">Password:</label>
                             <span>123456</span>

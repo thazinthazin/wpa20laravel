@@ -9,7 +9,7 @@
         <li class="xn-profile">
             <div class="profile">
                 <div class="profile-image">
-                    <img src="/uploads/user/avatar/admin.jpg" alt="Admin"/>
+                    <img src="{{asset('uploads/user/avatar/admin.jpg')}}" alt="Admin"/>
                 </div>
                 <div class="profile-data">
                     <div class="profile-data-name">Admin</div>
@@ -47,7 +47,7 @@
         </li>
          <li class="xn-title">Log Out</li>       
         <li>
-            <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-power-off"></span>Log Out Admin</a>                        
+            <a href="{{route('admin_logout')}}" class="mb-control" data-box="#mb-signout"><span class="fa fa-power-off"></span>Log Out Admin</a>                        
         </li> 
 
     </ul>

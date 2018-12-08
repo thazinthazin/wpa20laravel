@@ -1,7 +1,7 @@
 @extends('ecomm.admin.layouts.adminstyle2')
 {{-- 
 @section('link')
-<link rel="stylesheet" href="/src/css/dataTables.bootstrap.css">
+<link rel="stylesheet" href="{{asset('src/css/dataTables.bootstrap.css')}}">
 @stop
 --}}
 @section('content')

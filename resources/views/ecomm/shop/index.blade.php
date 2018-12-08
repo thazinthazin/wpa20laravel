@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 @endif                     
-                @endforeach                    
+                @endforeach
                 @endif                   
 
             </div> <!-- end of row -->

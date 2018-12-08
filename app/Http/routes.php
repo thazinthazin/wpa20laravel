@@ -16,8 +16,6 @@ Route::get('test', function(){
 });
 
 
-
-
 // SHOP VIEW ROUTE
 Route::group(['middleware' => ['redirectAdmin']], function(){
 
